@@ -1,7 +1,7 @@
 .PHONY: build
 build:
-	docker build . -t binaris/httpitzi
+	docker build . -t assaflavie/httpitzi
 
 .PHONY: run
 run:
-	docker run -it --rm -p 80:80 binaris/httpitzi
+	docker run -it --rm -p 80:80 assaflavie/httpitzi

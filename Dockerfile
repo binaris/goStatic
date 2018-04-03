@@ -9,6 +9,6 @@ RUN GOARCH=amd64 GOOS=linux go build  -ldflags "-linkmode external -extldflags -
 FROM busybox
 WORKDIR /
 VOLUME /www
-COPY --from=builder /go/src/github.com/PierreZ/goStatic/goStatic .
+COPY --from=builder /go/src/github.com/PierreZ/goStatic/goStatic ./httpitzi
 EXPOSE 80
 CMD ["/goStatic"]

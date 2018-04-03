@@ -6,7 +6,9 @@ COPY . .
 RUN GOARCH=amd64 GOOS=linux go build  -ldflags "-linkmode external -extldflags -static -w"
 
 # stage 1
-FROM centurylink/ca-certs
+FROM busybox
 WORKDIR /
+VOLUME /www
 COPY --from=builder /go/src/github.com/PierreZ/goStatic/goStatic .
-ENTRYPOINT ["/goStatic"]
+EXPOSE 80
+CMD ["/goStatic"]

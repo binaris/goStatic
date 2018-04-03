@@ -13,8 +13,8 @@ import (
 
 var (
 	// Def of flags
-	portPtr                  = flag.Int("port", 8043, "The listening port")
-	path                     = flag.String("path", "/srv/http", "The path for the static files")
+	portPtr                  = flag.Int("port", 80, "The listening port")
+	path                     = flag.String("path", "/www", "The path for the static files")
 	headerFlag               = flag.String("append-header", "", "HTTP response header, specified as `HeaderName:Value` that should be added to all responses.")
 	basicAuth                = flag.Bool("enable-basic-auth", false, "Enable basic auth. By default, password are randomly generated. Use --set-basic-auth to set it.")
 	setBasicAuth             = flag.String("set-basic-auth", "", "Define the basic auth. Form must be user:password")

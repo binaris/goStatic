@@ -34,14 +34,14 @@ Many links should provide you with additionnal info to see my point of view:
 
 ### How to use
 ```
-docker run -d -p 80:8043 -v path/to/website:/srv/http --name goStatic pierrezemb/gostatic
+docker run -d -p 80:8043 -v path/to/website:/srv/http --name httpitzi pierrezemb/httpitzi
 ```
 
-### Usage 
+### Usage
 
 ```
-./goStatic --help
-Usage of ./goStatic:
+./httpitzi --help
+Usage of ./httpitzi:
   -append-header HeaderName:Value
         HTTP response header, specified as HeaderName:Value that should be added to all responses.
   -default-user-basic-auth string

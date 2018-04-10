@@ -11,4 +11,4 @@ WORKDIR /
 VOLUME /www
 COPY --from=builder /go/src/github.com/PierreZ/goStatic/goStatic ./httpitzi
 EXPOSE 80
-CMD ["/goStatic"]
+CMD ["/httpitzi"]
